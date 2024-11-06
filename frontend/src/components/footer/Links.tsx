@@ -1,6 +1,6 @@
 export default function Links() {
   return(
-    <div className="flex gap-10 w-1/5">
+    <div className="flex justify-between w-1/5">
       <div className="flex flex-col gap-3">
           <a href="">About Us</a>
           <a href="">What We Do</a>
