@@ -5,8 +5,8 @@ import SocialMedia from "./SocialMedia";
 
 export default function Footer() {
   return(
-    <footer className="w-full bg-cyan50 text-white ">
-      <div className="w-full max-w-screen-xl mx-auto px-4 py-12">
+    <footer className="flex items-center justify-centerw-full h-64 bg-cyan50 text-white">
+      <div className="max-w-screen-xl w-full mx-auto p-4">
         <LogoFooter />
         <div className="flex justify-between w-full h-full">
           <ContactWays />
