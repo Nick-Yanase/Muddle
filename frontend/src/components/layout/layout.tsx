@@ -6,12 +6,12 @@ export interface MainPageProps {
   className?: string;
   children: React.ReactNode;
 }
-export default function Layout(props: MainPageProps){
+export default function Layout({className, children}: MainPageProps){
   return(
     <div className="flex flex-col">
       <Header/>
-      <main className={`w-full flex flex-col items-center justify-center ${props.className ?? ``}`}>
-        {props.children}
+      <main className={`w-full flex flex-col items-center justify-center ${className ?? ``}`}>
+        {children}
       </main>
       <Footer/>
     </div>
