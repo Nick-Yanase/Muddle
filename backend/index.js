@@ -14,6 +14,9 @@ connectDB();
 //Cria uma nova instância da aplicação Express. Essa instância app representa o servidor e será usada para configurar rotas, middlewares e iniciar o servidor.
 const app = express();
 
+ // Permite requisições de qualquer origem
+app.use(cors());
+
 //Configura o middleware express.json() para que o servidor entenda dados JSON no corpo das requisições. 
 app.use(express.json())
 
