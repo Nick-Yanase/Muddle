@@ -2,7 +2,7 @@ const User = require("../models/User")
 const jwt = require("jsonwebtoken")
 
 const register = async(req, res) => {
-  const {nome, email, password} = req.body; //Extrai email e password do corpo da requisição (req.body). Estes dados são enviados pelo cliente (ex.: formulário de registro).
+  const {nome, email, password} = req.body; //Extrai email e password do corpo da requisição (req.body). Estes dados são enviados pelo cliente (ex.: formulário de registro) TEM QUE USAR O MESMA VARIAVEL QUE ESTA AQUI E NO STADO.
   try{
     const user = new User({nome, email, password}); // Cria novo user e prepara para ser salvo no banco
     await user.save(); //sa await para aguardar que o user.save() termine. O save() salva o novo usuário no MongoDB. O middleware que criptografa a senha (pre('save')) é executado neste ponto
