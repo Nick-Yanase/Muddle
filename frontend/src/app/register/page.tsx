@@ -9,7 +9,7 @@ export default function Register() {
   const router = useRouter();
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
-  const [senha, setSenha] = useState("");
+  const [password, setPassword] = useState("");
 
   const registrar = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Evita o recarregamento da página
@@ -18,7 +18,7 @@ export default function Register() {
       const res = await fetch("http://localhost:5000/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nome, email, senha }),
+        body: JSON.stringify({ nome, email, password }),
       });
 
       if (res.ok) {
@@ -67,8 +67,8 @@ export default function Register() {
             <label>Senha:</label>
             <input
               type="password"
-              onChange={(e) => setSenha(e.target.value)}
-              value={senha}
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
             />
           </div>
 
