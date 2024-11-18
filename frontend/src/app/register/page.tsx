@@ -23,9 +23,9 @@ export default function Register() {
 
       if (res.ok) {
         console.log("Dados cadastrados com sucesso");
-        // const data = await res.json();
-        // alert("Cadastro efetuado com sucesso!");
-        // router.push("/todoList");
+        const data = await res.json();
+        alert("Cadastro efetuado com sucesso! Redirecionando para login!");
+        router.push("/login");
       } else {
         const data = await res.json();
         alert(data.message || "Erro ao cadastrar");

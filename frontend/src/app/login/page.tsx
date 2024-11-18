@@ -20,13 +20,15 @@ export default function Login(){
       })
 
       const data = await res.json()
-
+      console.log(data)
       if(res.ok){
         alert("login efetuado com sucesso")
         localStorage.setIatem("token", data.token)
-        return router.push("/todoList")
+        router.push("/todoList")
       }
-      return alert(data.message ||"Erro ao fazer o login")
+      else{
+        alert(data.message ||"Erro ao fazer o login")
+      } 
     }catch(error){
       console.error("Erro ao fazer login:", error);
       alert("Erro no servidor");
