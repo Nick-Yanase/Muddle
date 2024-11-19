@@ -4,7 +4,7 @@ import Task from "@/components/task/Task";
 export default function TodoList(){
   return(
     <Layout>
-      <Task/>
+      
     </Layout>
   )
 }
