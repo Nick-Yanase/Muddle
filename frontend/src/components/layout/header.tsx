@@ -11,6 +11,8 @@ export default function Header() {
       <nav className="w-full max-w-screen-xl p-4 flex justify-between items-center">
         <Logotipo />
         <div className="flex gap-4">
+
+           <Link href={"/todoList" } className=" px-6 py-3 flex items-center justify-center bg-pink rounded-3xl text-white ">list toso</Link>
            <Link href={"/register" } className=" px-6 py-3 flex items-center justify-center bg-pink rounded-3xl text-white ">cadastrar</Link>
           <Btn variant="secondary" size="default">
             Try It Free
