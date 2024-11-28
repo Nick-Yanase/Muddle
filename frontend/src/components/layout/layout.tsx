@@ -10,7 +10,7 @@ export default function Layout({className, children}: MainPageProps){
   return(
     <div className="flex flex-col">
       <Header/>
-      <main className={`w-full flex gap-10 flex-col items-center justify-center ${className ?? ``}`}>
+      <main className={`w-full flex gap-10 flex-col items-center justify-center relative ${className ?? ``}`}>
         {children}
       </main>
       <Footer/>
