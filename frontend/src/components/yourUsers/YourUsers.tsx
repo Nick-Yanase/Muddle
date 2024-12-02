@@ -1,9 +1,11 @@
 import Image from "next/image";
 import users from '/public/images/illustration-your-users.svg'
+import GetStarted from "../getStarted/GetStarted";
 
 export default function YourUsers() {
   return(
-    <section className="flex items-center justify-center max-w-screen-xl w-full h-[600px] p-4 shadow-lg rounded-lg">
+    <>
+      <section className="flex items-center justify-center max-w-screen-xl w-full h-[600px] p-4 shadow-lg rounded-lg ">
       <div className="flex items-center justify-between p-10 w-11/12">
         <div className="w-5/12">
           <h2 className="text-3xl font-bold text-cyan50 mb-4">Your Users</h2>
@@ -15,9 +17,11 @@ export default function YourUsers() {
             alt="together-image"
             fill
             objectFit="cover"
-          />
+            />
         </div>
       </div>
-    </section>
+      </section>
+      <GetStarted/>
+    </>
   )
 }
