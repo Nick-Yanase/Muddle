@@ -23,9 +23,9 @@ export default function Register() {
 
       if (res.ok) {
         console.log("Dados cadastrados com sucesso");
-        // const data = await res.json();
-        // alert("Cadastro efetuado com sucesso!");
-        // router.push("/todoList");
+        const data = await res.json();
+        alert("Cadastro efetuado com sucesso! Redirecionando para login!");
+        router.push("/login");
       } else {
         const data = await res.json();
         alert(data.message || "Erro ao cadastrar");
@@ -37,38 +37,41 @@ export default function Register() {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col">
+    <div className="w-full h-screen flex flex-col  items-center">
       <div className="w-full bg-gradient-to-r from-pink-500 via-orange-500 to-red-500 h-32 " />
-      <div className="flex flex-col w-[500px] h-96">
+      <div className="flex flex-col w-[600px] h-[400px] gap-3">
         <Logotipo />
         <form
-          className="w-full p-4 shadow-lg rounded-lg bg-white flex-col flex gap-4"
+          className="w-full p-4 shadow-lg rounded-lg bg-white flex-col flex gap-8"
           onSubmit={registrar}
         >
-          <span>Cadastro</span>
+          <span className="text-xl font-semibold text-emerald-950">Cadastro</span>
           <span className="w-full h-px bg-zinc-400"></span>
-          <div className="flex-1 flex-col">
+          <div className="flex-1  flex gap-3">
             <label>Nome:</label>
             <input
               type="text"
               onChange={(e) => setNome(e.target.value)}
               value={nome}
+              className="border-b w-full"
             />
           </div>
-          <div className="flex-1 flex-col">
+          <div className="flex-1 flex gap-3">
             <label>Email:</label>
             <input
               type="email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              className="border-b w-full"
             />
           </div>
-          <div className="flex-1 flex-col">
+          <div className="flex-1 flex gap-3">
             <label>Senha:</label>
             <input
               type="password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
+              className="border-b w-full"
             />
           </div>
 
