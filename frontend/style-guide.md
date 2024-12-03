@@ -21,6 +21,21 @@ The designs were created to the following widths:
 - Very Dark Cyan: hsl(192, 100%, 9%)
 - Grayish Blue: hsl(208, 11%, 55%)
 
+### colors toDo-list
+
+#F8FAFC - Branco Gelo
+#F5D565 - Amarelo Claro
+#F5E8D5 - Bege Suave
+#E9A23B - Laranja Pastel
+#A0ECB1 - Verde Menta
+#32D657 - Verde Brilhante
+#F7D4D3 - Rosa Claro
+#DD524C - Vermelho Terroso
+#E3E8EF - Cinza Azulado Claro
+#97A3B6 - Cinza Azulado
+#3662E3 - Azul Real
+#00000033 - Preto Translúcido (20% opacidade)
+
 ## Typography
 
 ### Body Copy

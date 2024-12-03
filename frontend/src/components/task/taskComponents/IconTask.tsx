@@ -1,8 +1,9 @@
 import Image from "next/image"
 
 interface IconTaskProps {
-  link: string
+  link: string,
 }
+
 
 export default function IconTask({link}: IconTaskProps){
   return(

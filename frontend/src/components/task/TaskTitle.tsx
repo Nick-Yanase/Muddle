@@ -10,7 +10,8 @@ export default function TaskTitle() {
           src={logoTask}
           alt="logo-task"
           fill
-          objectFit="cover"
+          // objectFit="cover"
+          style={{ objectFit: 'contain'}}
         />
       </div>
       <div className="flex flex-col gap-4">
@@ -22,7 +23,7 @@ export default function TaskTitle() {
           src={editDuotone}
           alt="edit-button"
           fill
-          objectFit="cover"
+          style={{ objectFit: 'contain'}}
         /> 
       </button>
     </div>
