@@ -18,6 +18,8 @@ const config: Config = {
         green20: '#32D657 ',
         red20: '#DD524C',
         yellow20: '#F5D565',
+        beige10: '#F5E8D5',
+        orange20: '#E9A23B',
 
         background: "var(--background)",
         foreground: "var(--foreground)",

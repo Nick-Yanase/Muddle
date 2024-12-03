@@ -17,6 +17,7 @@ export default function StatusTask({link, status, bgColor}: StatusTaskProps){
               alt="icon-status"
               fill
               objectFit="cover"
+              
             />
           </div>
         </div>
