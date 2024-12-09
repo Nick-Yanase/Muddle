@@ -13,6 +13,7 @@ const config: Config = {
         cyan30: 'hsl(208, 11%, 55%)',
         cyan50: 'hsl(192, 100%, 9%)',
         pink: ' hsl(322, 100%, 66%)',
+
         gray10: '#E3E8EF',
         realBlue: '#3662E3',
         green20: '#32D657 ',
@@ -20,6 +21,7 @@ const config: Config = {
         yellow20: '#F5D565',
         beige10: '#F5E8D5',
         orange20: '#E9A23B',
+        iceWhite: '#F8FAFC',
 
         background: "var(--background)",
         foreground: "var(--foreground)",
