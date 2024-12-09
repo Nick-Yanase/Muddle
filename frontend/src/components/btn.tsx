@@ -5,7 +5,7 @@ const buttonVariants = tv({
   base: "rounded-lg px-16 font-medium flex items-center justify-center gap-2 transition rounded-3xl font-semibold",
   variants: {
     variant: {
-      primary: "bg-pink text-white hover:bg-pink/80 ",
+      primary: "bg-orange20 text-white hover:bg-yellow20 ",
       secondary: "bg-white text-cyan50 hover:text-cyan30 shadow-lg",
     },
     size: {

@@ -12,8 +12,10 @@ export default function Header() {
         <Logotipo />
         <div className="flex gap-4">
 
-           <Link href={"/todoList" } className=" px-6 py-3 flex items-center justify-center bg-pink rounded-3xl text-white ">list toso</Link>
-           <Link href={"/register" } className=" px-6 py-3 flex items-center justify-center bg-pink rounded-3xl text-white ">cadastrar</Link>
+           <Link href={"/todoList" } className=" px-6 py-3 flex items-center justify-center bg-pink rounded-3xl text-white ">list toso vai sair dps</Link>
+          <Btn variant="primary" size="default">
+            <Link href={"/register" }>cadastrar</Link>
+          </Btn>
           <Btn variant="secondary" size="default">
             Try It Free
           </Btn>
