@@ -8,9 +8,9 @@ export interface MainPageProps {
 }
 export default function Layout({className, children}: MainPageProps){
   return(
-    <div className="flex flex-col bg-iceWhite">
+    <div className="flex flex-col bg-gray10">
       <Header/>
-      <main className={`w-full flex gap-10 flex-col items-center justify-center relative ${className ?? ``}`}>
+      <main className={`w-full flex gap-10 flex-col items-center justify-center relative bg-gray10 ${className ?? ``}`}>
         {children}
       </main>
       <Footer/>
