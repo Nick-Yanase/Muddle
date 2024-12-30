@@ -20,10 +20,10 @@ export default function Home() {
   const [isClicked, setIsClicked] = useState(false)
   const [img, setImg] = useState([] as ArrayImgs[])
 
-  const aaa = [
-    img1: "/public/images/img-funcionalidade.png",
-    "/public/images/img-funcionalidade-2.png"
-  ]
+  // const aaa = [
+  //   img1: "/public/images/img-funcionalidade.png",
+  //   "/public/images/img-funcionalidade-2.png"
+  // ]
 
 
 
@@ -46,7 +46,7 @@ export default function Home() {
             </button>
           </div>
           <div className="w-full relative">
-            {aaa.map((element) => {
+            {/* {aaa.map((element) => {
               if(isClicked == true) {
                 return (
                   <Image 
@@ -57,7 +57,7 @@ export default function Home() {
                   />
                 )
               }
-            })}
+            })} */}
           </div>
           {/* <div className="w-full relative">
             <Image 
